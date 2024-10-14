@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.hustandroid.lab3"
+    namespace = "com.hustandroid.lab41"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hustandroid.lab3"
-        minSdk = 23
-        targetSdk = 34
+        applicationId = "com.hustandroid.lab41"
+        minSdk = 21
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -45,4 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }

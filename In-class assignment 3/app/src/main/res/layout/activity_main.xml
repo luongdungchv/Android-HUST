@@ -1,0 +1,155 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student ID" />
+
+    <!-- Gender Selection in Horizontal Layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:" />
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <!-- Date of Birth Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/show_calendar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date of Birth" />
+
+        <TextView
+            android:id="@+id/date_of_birth_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth: "
+            android:layout_marginStart="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Address Selection Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:" />
+
+    <!-- Address Selection in Horizontal Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/ward_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:id="@+id/district_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/province_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Hobby Selection Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies:"
+        android:layout_marginTop="16dp" />
+
+    <!-- Hobby CheckBoxes in Horizontal Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/hobby_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport" />
+
+        <CheckBox
+            android:id="@+id/hobby_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movies" />
+
+        <CheckBox
+            android:id="@+id/hobby_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/agreement_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree with Terms and Privacy" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>
